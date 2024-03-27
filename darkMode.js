@@ -10,7 +10,7 @@ darkModeToggle.addEventListener('click', function() {
     
     // Change button text and style based on dark mode status
     if (document.body.classList.contains('dark-mode')) {
-        darkModeToggle.textContent = 'Eyes well rested 😌';
+        darkModeToggle.textContent = 'Well-rested eyes 😌';
         darkModeToggle.style.backgroundColor = '#0b090a'; // Change to dark mode background color
         darkModeToggle.style.color = '#ffffff'; // Change to white text color
     } else {
