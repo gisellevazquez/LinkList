@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.module {
+  width: 200px;
+  margin: 10px;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  border: 2px solid;
+  border-color: #dadae25d; ;
+}
+
+.module:hover {
+  background-color: #f7f4f3;
+}
+
+.module img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px; /* Add margin to the right of the icon */
+}
+
+.module span {
+  font-weight: 700;
+  color: #222223;
+  margin-left: 8px; /* Add margin to the left of the text */
+}
+
+.module a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.module a:hover span {
+  color: #111111;
+}
+
+.module-link {
+  text-decoration: none; /* Remove default link underline */
+  display: inline-block; /* Ensure the link behaves as a block */
+}
+
+.page-title {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  position: relative;
+  letter-spacing: 0; /* Initial letter spacing */
+  transition: letter-spacing 0.3s ease; /* Smooth transition for letter spacing */
+}
+
+.page-title:hover {
+  letter-spacing: 0.3em; /* Increased letter spacing on hover */
+}
+
+.page-sub {
+  text-align: center;
+  margin-top: 0px; 
+  font-family: 'Roboto Condensed', sans-serif; 
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .module {
+    width: calc(100% - 20px);
+  }
+}
+
+body {
+  cursor: none; /* Hide the default cursor */
+}
+
+.color-trail {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /* Make it round */
+  pointer-events: none; /* Ensure the elements don't interfere with mouse events */
+  z-index: 9999; /* Ensure they appear above other content */
+  animation: fadeOut 1s ease-in forwards; /* Apply animation to fade out */
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+

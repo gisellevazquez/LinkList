@@ -1,0 +1,42 @@
+/* CSS for the dark mode toggle button */
+#darkModeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: #000000; /* Default text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#darkModeToggle.dark-mode {
+    background-color: #333333; /* Dark mode background color */
+}
+
+
+#darkModeToggle:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  .dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  #darkModeToggle.dark-mode {
+    background-color: #333333; /* Dark mode background color */
+    color: #ffffff; /* Dark mode text color */
+}
+
+.dark-mode .module {
+    background-color: #333333; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+  }
+
+  .dark-mode .module span {
+    color: #fff; /* Dark mode text color */
+  }
+  .dark-mode .module:hover {
+    background-color: #00000056;
+  }
